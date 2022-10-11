@@ -1,0 +1,115 @@
+ /* box sizing::before,::after {
+  box-sizing: border-box;
+} */
+
+
+ul,
+ol {
+  padding: 0;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+ul,
+ol {
+  list-style: none;
+}
+
+
+a {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article >  * {
+  margin-top: 1em;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+ @media (prefers-reduced-motion: reduce) {
+   * {
+     animation-duration: 0.01ms !important;
+     animation-iteration-count: 1 !important;
+     transition-duration: 0.01ms !important;
+     scroll-behavior: auto !important;
+   }
+ }
+
+
+ .swiper-slide img{
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+ }
+body{
+  background-color: rgb(66, 62, 62);
+  overflow: hidden;
+}
+
+
+.image-slider .swiper-pagination{
+
+position: relative;
+top: 100px;
+
+}
+.image-slider .swiper-pagination-bullet{
+background-color: white;
+width:20px ;
+height: 20px;
+line-height: 20px;
+font-size: 14px;
+
+}
+
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after{
+  font-size: 80px;
+ color: #fff;
+ position: relative;
+ bottom: 150px;
+}
+
+.image-slider .swiper-scrollbar-drag{
+  cursor: pointer;
+  background-color: white;
+
+}
+
+.wrapper .swiper-horizontal> .swiper-scrollbar, 
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  bottom: 310px;
+}
